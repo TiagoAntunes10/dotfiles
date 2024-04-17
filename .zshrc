@@ -12,6 +12,7 @@ export ZSH=$HOME/.oh-my-zsh
 export PATH=~/.local/bin:${PATH}
 alias francinette="$HOME"/francinette/tester.sh
 alias paco="$HOME"/francinette/tester.sh
+alias sess=/usr/bin/tmux-sessionizer
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -79,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,6 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+bindkey -v
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
