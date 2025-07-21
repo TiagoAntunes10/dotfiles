@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/ ~/git_42 ~/git_42/Common_Core ~/git_42/Common_Core/rank0 ~/git_42/Common_Core/rank1 ~/git_42/Common_Core/rank2 ~/francinette -mindepth 1 -maxdepth 3 -type d | fzf)
+    selected=$(find ~/ ~/git_42 ~/git_42/Common_Core -mindepth 1 -maxdepth 3 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
